@@ -101,6 +101,12 @@ define Package/dae/install
 
 	$(INSTALL_DIR) $(1)/etc/init.d
 	$(INSTALL_BIN) $(CURDIR)/files/dae.init $(1)/etc/init.d/dae
+
+	$(INSTALL_DIR) $(1)/usr/share/dae
+	$(LN) ../v2ray/geoip.dat $(1)/usr/share/dae/geoip.dat
+
+	$(INSTALL_DIR) $(1)/usr/share/dae
+	$(LN) ../v2ray/geosite.dat $(1)/usr/share/dae/geosite.dat
 endef
 
 
