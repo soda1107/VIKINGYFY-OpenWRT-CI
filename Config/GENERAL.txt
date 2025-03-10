@@ -1,11 +1,11 @@
 #科学插件调整
-#CONFIG_PACKAGE_luci-app-homeproxy=y
+CONFIG_PACKAGE_luci-app-homeproxy=y
 #CONFIG_PACKAGE_luci-app-mihomo=y
 CONFIG_PACKAGE_luci-app-daed=y
 #CONFIG_PACKAGE_luci-app-dae=y
 #增加插件
 #CONFIG_PACKAGE_luci-app-samba4=n
-CONFIG_PACKAGE_luci-app-wolplus=y
+#CONFIG_PACKAGE_luci-app-wolplus=y
 #CONFIG_PACKAGE_luci-app-tailscale=y
 CONFIG_PACKAGE_luci-app-autoreboot=y
 CONFIG_PACKAGE_luci-app-advancedplus=n
