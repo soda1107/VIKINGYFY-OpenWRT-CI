@@ -9,10 +9,10 @@ log () {
 
 # 定义代理源数组
 proxies="
-https://ghfast.top
-https://hub.gitmirror.com
 https://ghproxy.cfd
 https://ghps.cc
+https://ghfast.top
+https://hub.gitmirror.com
 "
 
 # 定义下载函数
@@ -81,11 +81,11 @@ fi
 
 #重启dead 或者dae
 if [ "$update_success" = true ]; then
-  if /etc/init.d/daed running;then
+  if /etc/init.d/daed running; then
     log "daed is reloading"
     /etc/init.d/daed restart
     log "daed has reloaded"
-  elif /etc/init.d/dae running;then
+  elif /etc/init.d/dae running; then
     log "dae is reloading"
     /etc/init.d/dae hot_reload
     log "dae has reloaded"
